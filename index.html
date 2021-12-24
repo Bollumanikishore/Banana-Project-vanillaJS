@@ -4,30 +4,71 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
+    <title>MK|Banana Translator</title>
     <style>
+        *{
+            margin: 0px;
+            font-family: cursive;
+        }
         textarea{
             display:block;
-            margin:1rem;
-            width : 500px;
+            margin: auto;
+            width : 30rem;
             padding:1rem;
-            height: 50px;
+            height: 4.7rem;
+            margin-top: 2rem;
         }
         #output-box{
             border: 1px solid black;
-            height:50px;
-            margin:1rem;
-            width:500px;
+            height:3.8rem;
+            margin:auto;
+            width:30rem;
             display: block;
-            padding:0.5rem
+            padding:1rem;
+            overflow:scroll;
+        }
+        h1{
+            background-color: #f2c94c;
+            text-align:center;
+            padding:2rem;
+            font-weight: normal;
+        }
+        #btn-trans{
+            background-color:#f2c94c;
+            padding:0.7rem 1.5rem;
+            margin:auto;
+            border:none;
+            display:block;
+            font-size: large;
+        }
+        footer{
+            background-color:#f2c94c;
+            text-align:center;
+            margin-top: 2rem;
+            padding: 1rem;
+            position: fixed;
+            width: 100%;
+        }
+        footer div{
+            display:block;
         }
     </style>
 </head>
 <body>
-    <h1>Banana Game</h1>
-    <textarea id ="text-area"  placeholder="Enter something to convert"></textarea>
+    <nav>
+    <h1>Banana Translator</h1>
+    </nav>
+    <main>
+    <textarea id ="text-area"  placeholder="Enter something in english to translate"></textarea>
+    <br>
     <button id="btn-trans">Translate</button>
+    <br>
     <div id = "output-box"></div>
+    </main>
+    <footer>
+        <div>about</div>
+        <div><p>Are you a fan of minions?<br> Did you know that the gibberish they say is an actual language. <br>Use the translator to convert your text from english to mimions speak or Banana language</p></div>
+    </footer>
     <script src="application.js" type="text/javascript"></script>
 </body>
 </html>
